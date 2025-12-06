@@ -8,7 +8,9 @@ on:
 
 jobs:
   build-and-push:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted   # Use your self-hosted runner
+    # Optional: add labels if you have multiple runners
+    # runs-on: [self-hosted, linux, docker]
 
     steps:
       - name: Checkout Code
